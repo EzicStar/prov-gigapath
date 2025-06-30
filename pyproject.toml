@@ -11,6 +11,19 @@ requires-python = ">=3.9"
 [project.urls]
 "Homepage" = "https://github.com/prov-gigapath/prov-gigapath"
 "Bug Tracker" = "https://github.com/prov-gigapath/prov-gigapath/issues"
+dependencies = [
+    "fvcore",
+    "iopath",
+    "monai",
+    "scikit-image",
+    "webdataset",
+    "lifelines",
+    "scikit-survival",
+    "fairscale",
+    "wandb",
+    "ninja==1.11.1.1",
+    "flash-attn @ git+https://github.com/KatherLab/flash-attention.git@7593c84a0d36b7f2ead10660209b6f8b374ade4e"
+]
 
 [tool.setuptools.packages.find]
 include = ["gigapath", "gigapath.*"]
